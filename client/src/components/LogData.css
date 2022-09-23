@@ -1,0 +1,103 @@
+:root {
+  --actionBackgroundColor: #f76b8a;
+  --actionTextColor: white;
+  --activeColor: #66bfbf;
+  --standardBackgroundColor: #fcfefe;
+  --alternativeBackgroundColor: #eaf6f6;
+  --standardTextColor: black;
+  --lightColor: lightgray;
+  --moderateColor: darkgray;
+}
+
+body {
+  /* background-color: var(--alternativeBackgroundColor); */
+  overflow: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline-color: var(--activeColor);
+}
+
+select {
+  border-color: var(--moderateColor);
+}
+
+input[type=text],
+input[type=number] {
+  border-color: var(--lightColor);
+}
+
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover {
+  transform: scale(1.1);
+}
+
+.logDataPage {
+  background-color: var(--alternativeBackgroundColor);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logDataBody {
+  /* width: 85%; */
+  width: 600px;
+}
+
+.logDataHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questionContainer {
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+}
+
+#logDatabtn {
+  color: white;
+  background-color: #000a47;
+  padding: 7px 14px;
+  border-style: none;
+  border-radius: 8px;
+  margin: 7px 0 0 7px;
+}
+
+#inputQuestion {
+  width: 97%;
+}
+
+#numberQuestion {
+  width: 30%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.mul {
+  display: block;
+}
+
+.nomul {
+  display: none;
+}
+
+.bool {
+  display: block;
+}
+
+.nobool {
+  display: none;
+}

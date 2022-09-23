@@ -1,0 +1,290 @@
+:root {
+    --actionBackgroundColor: #f76b8a;
+    --actionTextColor: white;
+    --activeColor: #66bfbf;
+    --standardBackgroundColor: #fcfefe;
+    --alternativeBackgroundColor: #eaf6f6;
+    --standardTextColor: black;
+    --lightColor: lightgray;
+    --moderateColor: darkgray;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaf6f6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.topnav {
+    justify-content: center;
+    height: 100px;
+    background-color: azure;
+    border: solid 5px #eaf6f6;
+}
+
+
+.maincontainer {
+    height: 100%;
+}
+
+.editMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagenav {
+    top: 18px;
+    display: inline;
+}
+
+
+
+
+.maintitle {
+    font-size: 3em;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.mainsubtitle {
+    display: inline-block;
+    font-size: 1.3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* .inputcontainer {
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+    padding: 50px;
+} */
+
+.inputcontainer {
+    width: 100%;
+}
+
+input[type=text],
+input[type=password],
+input[type=number] {
+    border: 1px solid black;
+    width: 98%;
+    padding: 5px;
+    margin: 5px 0 12px 0;
+    display: inline;
+    border-radius: 5px;
+}
+
+.select {
+    border: 1px solid black;
+    width: 20%;
+    padding: 3px 0 3px 0;
+    margin: 5px 0 12px 0;
+    display: inline;
+    border-radius: 5px;
+}
+
+.questions {
+    width: 600px;
+}
+
+.material-icons {
+    position: relative;
+    cursor: pointer;
+}
+
+#deleteQuestion {
+    float: right;
+    right: 15px;
+}
+
+/*.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    display: inline;
+    position: relative;
+    top: 25%;
+    right: 10%;
+    float: right;
+    cursor: pointer;
+}*/
+
+.qcontainer {
+    background-color: var(--standardBackgroundColor);
+    border-radius: 5px;
+    margin: 10px 5px 10px 5px;
+    padding: 10px;
+}
+
+.mul {
+    display: block;
+}
+
+.nomul {
+    display: none;
+}
+
+.textanswer {
+    margin: 5px;
+    padding: 5px;
+    background-color: #66bfbf;
+    border-radius: 5px;
+}
+
+
+#choices {
+    display: block;
+    width: 60%;
+    clear: both;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid var(--moderateColor);
+    margin-left: 20px;
+}
+
+#choices:focus {
+    outline: none;
+}
+
+.disabledRadio {
+    position: absolute;
+    margin-top: 9px;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 15px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1em;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+.topbar {
+    background: #435a6b;
+    height: 100px;
+    display: flex;
+    /*align-items: center;*/
+}
+
+.title {
+    top: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2em;
+    position: relative;
+    white-space: nowrap;
+    float: left;
+    width: 160px;
+    color: white;
+}
+
+.pages {
+    top: 5px;
+    font-size: 9.5px;
+    white-space: nowrap;
+}
+
+.userdiv {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+}
+
+.usercontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prof {
+    top: 18px;
+}
+
+.pages::before,
+.pages::after {
+    display: inline;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.pages::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.pages::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.pages:hover::before,
+.pages:hover::after,
+.pages:focus::before,
+.pages:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.area {
+    display: table;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.item {
+    display: table-cell;
+    list-style: none;
+}
+
+
+/* These rules only apply if the window's max-width is 600px or less */
+@media all and (min-width: 601px) {}
+
+@media all and (max-width: 600px) {
+    .title {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,155 @@
+img {
+    left: 0;
+    width: 40px;
+    height: 37px;
+    border-radius: 50%;
+}
+
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainer {
+    /* width: 100vw; */
+    width: 600px;
+}
+
+
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.profimg {
+    display: inline-block;
+    left: 50px;
+    margin-right: 50px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 200ms, background 200ms;
+}
+
+.custom-file-upload:hover {
+    transform: translateY(-2px);
+}
+
+.removeImageButton {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 200ms, background 200ms;
+    background: transparent;
+    color: #000000;
+    box-shadow: 0 0 0 3px #000000 inset;
+}
+
+.removeImageButton:hover {
+    transform: translateY(-2px);
+}
+
+
+/* .savebtn,
+.logoutbtn {
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+    background: #000a47;
+    line-height: 1.15;
+    font-size: 12px;
+    margin: 10px;
+} */
+
+.savebtn {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+    background: #000a47;
+    line-height: 1.15;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.logoutbtn {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font-family: arial, sans-serif;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.savebtn:hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+
+.profileHeader {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.profileContainer,
+.nameContainer,
+.emailContainer,
+.addressContainer {
+    background-color: white;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.profileBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#profileName,
+#profileEmail,
+#profileAddress {
+    width: auto;
+}

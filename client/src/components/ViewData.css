@@ -1,0 +1,125 @@
+:root {
+    --actionBackgroundColor: #f76b8a;
+    --actionTextColor: white;
+    --activeColor: #66bfbf;
+    --standardBackgroundColor: #fcfefe;
+    --alternativeBackgroundColor: #eaf6f6;
+    --standardTextColor: black;
+    --lightColor: lightgray;
+    --moderateColor: darkgray;
+}
+
+.viewDataPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.viewDataHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* .viewDataByQuestionContainer {
+    width: 600px;
+
+} */
+
+.viewDataBody {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewDateDataHeader {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.viewDataByQuestion {
+    width: 600px;
+}
+
+.viewDataByDate {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 600px;
+}
+
+
+.viewDataQuestionContainer {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.inputQuestion {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nodata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#viewQ,
+#viewD {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#viewQ:hover,
+#viewD:hover {
+    border: none;
+    border-bottom: solid lightblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#download {
+    color: white;
+    background-color: #000a47;
+    padding: 7px 14px;
+    border-style: none;
+    border-radius: 8px;
+    margin: 7px 0 0 7px;
+}
+
+
+#inputQuestionViewByDate {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media all and (max-width: 600px) {
+    .viewDataBody {
+        overflow-x: hidden;
+    }
+
+    .viewDataByQuestion {
+        width: 95%;
+    }
+
+    .viewDataByDate {
+        width: 95%;
+    }
+}
+
+.textanswer{
+    background-color: #eaf6f6;
+}
